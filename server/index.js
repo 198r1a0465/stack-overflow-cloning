@@ -23,7 +23,7 @@ app.use('/user',userRoutes) //here we are we get like /user/login or /user/signu
 
 const PORT=process.env.PORT||5000
 
-const CONNECTION_URL="mongodb+srv://maheshyadav:maheshyadav@cluster0.n8mppa6.mongodb.net/?retryWrites=true&w=majority"
+const CONNECTION_URL="mongodb+srv://maheshyadav:<password>@cluster0.n8mppa6.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
        .then(()=>app.listen(PORT,()=>{console.log(`server running on ${PORT}`)}))
        .catch((err)=>console.log(err.message))
