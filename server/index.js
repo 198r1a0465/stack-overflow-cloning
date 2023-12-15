@@ -19,11 +19,11 @@ app.post('auth/signup',()=>{
 })
 
 app.use('/user',userRoutes) //here we are we get like /user/login or /user/signup login is replaced by userRoutes
-
+"mongodb+srv://maheshyadav:mahesh@stack-overflow-clone.kc99tin.mongodb.net/?retryWrites=true&w=majority"
 
 const PORT=process.env.PORT||5000
 
-const CONNECTION_URL="mongodb+srv://maheshyadav:<password>@cluster0.n8mppa6.mongodb.net/?retryWrites=true&w=majority"
+const CONNECTION_URL="mongodb+srv://maheshyadav:<password>@stack-overflow-clone.kc99tin.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
        .then(()=>app.listen(PORT,()=>{console.log(`server running on ${PORT}`)}))
        .catch((err)=>console.log(err.message))
