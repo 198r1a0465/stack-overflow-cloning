@@ -19,7 +19,7 @@ app.post('auth/signup',()=>{
 })
 
 app.use('/user',userRoutes) //here we are we get like /user/login or /user/signup login is replaced by userRoutes
-"mongodb+srv://maheshyadav:mahesh@stack-overflow-clone.kc99tin.mongodb.net/?retryWrites=true&w=majority"
+
 
 const PORT=process.env.PORT||5000
 
